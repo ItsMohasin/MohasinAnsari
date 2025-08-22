@@ -1,0 +1,55 @@
+[
+  {
+    "id": "flindly",
+    "title": "Flindly the Dating App",
+    "subtitle": "Where two peoples meet",
+    "name": "Flindly",
+    "type": "Self Project",
+    "thumbnail": "assets/img/project/flindly.png",
+    "description": [
+      "Developed a cross-platform mobile application frontend using Flutter, delivering responsive and engaging UI for Android & iOS.",
+      "Implemented core features including profile creation, swipe-to-match, chat interface, and authentication flows.",
+      "Integrated REST APIs with efficient state management, ensuring seamless performance and real-time updates."
+    ],
+    "video": "https://www.youtube.com/embed/vGOL7ZvuGMc",
+    "images": [
+      "assets/img/project/flindly1.jpg",
+      "assets/img/project/flindly2.jpg",
+      "assets/img/project/flindly3.jpg"
+    ]
+  },
+  {
+    "id": "maxfit",
+    "title": "MaxFit Event Management",
+    "subtitle": "Corporate Event Platform",
+    "name": "MaxFit",
+    "type": "TE Solutions",
+    "thumbnail": "assets/img/project/eventmanagement.png",
+    "description": [
+      "Built a scalable event management platform.",
+      "Implemented ticket booking, event scheduling, and payment gateway integration."
+    ],
+    "video": "",
+    "images": [
+      "assets/img/project/event1.jpg",
+      "assets/img/project/event2.jpg"
+    ]
+  },
+  {
+    "id": "io8",
+    "title": "io8.io Angular Project",
+    "subtitle": "Business Web Platform",
+    "name": "io8.io",
+    "type": "Real IT Solutions",
+    "thumbnail": "assets/img/project/io8.png",
+    "description": [
+      "Developed enterprise-level Angular web application.",
+      "Worked on dashboards, charts, and role-based authentication."
+    ],
+    "video": "",
+    "images": [
+      "assets/img/project/io8-1.jpg",
+      "assets/img/project/io8-2.jpg"
+    ]
+  }
+]

@@ -25,6 +25,8 @@
   | 11. particles
   | 12. Ripple
   | 13. Parallax Effect
+  | 14. Send Email
+  | 15. Project Detail
   */
 
   /*--------------------------------------------------------------
@@ -514,4 +516,61 @@
       }
     });
   }
+
+    /*--------------------------------------------------------------
+    14. Email Send
+  --------------------------------------------------------------*/
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm("service_menuh9m", "template_5sltq88", this)
+    .then(() => {
+      document.getElementById("status").innerText = "✅ Message sent successfully!";
+      document.getElementById("contact-form").reset();
+    }, (error) => {
+      document.getElementById("status").innerText = "❌ Failed to send message. Try again.";
+      console.error("EmailJS Error:", error);
+    });
+});
+
+
+    /*--------------------------------------------------------------
+    15. Project Detail
+  --------------------------------------------------------------*/
+
+
+ const params = new URLSearchParams(window.location.search);
+  const projectId = params.get("id");
+
+  fetch("assets/data/projects.json")
+    .then(res => res.json())
+    .then(data => {
+      const project = data[projectId];
+      if (project) {
+        // Header
+        document.getElementById("project-title").innerText = project.title;
+        document.getElementById("project-company").innerText = project.company;
+        document.getElementById("project-date").innerText = project.date;
+
+        // Details Section
+        document.getElementById("project-details").innerHTML = `
+          <p>${project.description}</p>
+          <img class="st-zoom-in" src="${project.img}" alt="${project.title}" style="max-width:100%; margin:20px 0;">
+          ${project.video ? `
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="${project.video}" allowfullscreen></iframe>
+            </div>` : ""}
+        `;
+      } else {
+        document.getElementById("project-details").innerHTML = "<p>❌ Project not found</p>";
+      }
+    })
+    .catch(err => {
+      console.error("Error loading project:", err);
+      document.getElementById("project-details").innerHTML = "<p>⚠️ Failed to load project details.</p>";
+    });
+    
+
+
 })(jQuery); // End of use strict
