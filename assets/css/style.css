@@ -3041,3 +3041,131 @@ canvas {
       -ms-flex-align: center;
           align-items: center;
 }
+
+
+/* Gallary */
+/* Masonry Grid with fixed desktop columns */
+.st-gallery {
+  column-count: 3 !important;   /* force 3 columns */
+  column-gap: 15px;
+  margin-top: 30px;
+}
+
+/* Make sure images flow properly */
+.st-gallery img {
+  width: 100% !important;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.st-gallery img:hover {
+  transform: scale(1.05);
+  border-color: #00c3ff;
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.8);
+  z-index: 1;
+  position: relative;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .st-gallery {
+    column-count: 3;  /* still 3 on medium-large screens */
+  }
+}
+@media (max-width: 992px) {
+  .st-gallery {
+    column-count: 2;
+  }
+}
+@media (max-width: 576px) {
+  .st-gallery {
+    column-count: 1;
+  }
+}
+
+
+/* dots */
+/* Slick dots - small classic circles */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc; /* inactive dot color */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active {
+  background: #ff6600; /* active dot color */
+  transform: scale(1.2); /* slightly bigger active */
+}
+
+.slick-dots li button {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  background: none;
+}
+
+
+/* heightlight */
+.project-highlights {
+  margin-top: 20px;
+}
+
+.project-highlights h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.highlights-list li::before {
+  content: "✔"; /* or "•" for simple dots */
+  position: absolute;
+  left: 0;
+  color: #ff5722; /* accent color */
+  font-weight: bold;
+}
+
+#project-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Drop-cap ONLY for first paragraph */
+#project-description p:first-of-type::first-letter {
+  font-size: 32px;      /* Bigger first letter */
+  font-weight: bold;
+  float: left;
+  margin-right: 6px;
+  line-height: 1;
+}
+

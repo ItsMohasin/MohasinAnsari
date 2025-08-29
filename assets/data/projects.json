@@ -5,51 +5,139 @@
     "subtitle": "Where two peoples meet",
     "name": "Flindly",
     "type": "Self Project",
-    "thumbnail": "assets/img/project/flindly.png",
+    "thumbnail": "assets/img/project/flindly/flindly.png",
     "description": [
-      "Developed a cross-platform mobile application frontend using Flutter, delivering responsive and engaging UI for Android & iOS.",
-      "Implemented core features including profile creation, swipe-to-match, chat interface, and authentication flows.",
-      "Integrated REST APIs with efficient state management, ensuring seamless performance and real-time updates."
-    ],
+    "Flindly is a cross-platform dating application built with Flutter, designed for both Android and iOS. It delivers a sleek and modern experience while ensuring seamless performance through REST API integrations and efficient state management.",
+    "The app allows users to create personalized profiles, swipe-to-match, and chat with matches. Authentication is handled via OTP-based login and Google Sign-In/Sign-Up for secure and flexible onboarding.",
+    "Flindly includes engaging social features such as the ability to see who viewed your profile, track likes, and unlock premium insights through a subscription model. A dark theme mode enhances accessibility and provides a modern UI feel.",
+    "With a premium UI/UX design system, the application ensures smooth interactions and elevates the overall user experience."
+  ],
+  "highlights": [
+    "Built with Flutter for Android & iOS",
+    "OTP authentication & Google login/signup",
+    "Swipe-to-match system with chat interface",
+    "Profile views and like tracking",
+    "Subscription system with premium insights",
+    "Dark theme mode",
+    "Premium UI/UX design"
+  ],
     "video": "https://www.youtube.com/embed/vGOL7ZvuGMc",
     "images": [
-      "assets/img/project/flindly1.jpg",
-      "assets/img/project/flindly2.jpg",
-      "assets/img/project/flindly3.jpg"
+      "assets/img/project/flindly/flindly1.png",
+      "assets/img/project/flindly/flindly2.png",
+      "assets/img/project/flindly/flindly3.png"
     ]
   },
   {
-    "id": "maxfit",
-    "title": "MaxFit Event Management",
-    "subtitle": "Corporate Event Platform",
-    "name": "MaxFit",
+     "id": "maxfit",
+  "title": "MaxFit - Event Management",
+  "subtitle": "Salesforce Experience Cloud Platform",
+  "name": "MaxFit",
     "type": "TE Solutions",
-    "thumbnail": "assets/img/project/eventmanagement.png",
-    "description": [
-      "Built a scalable event management platform.",
-      "Implemented ticket booking, event scheduling, and payment gateway integration."
-    ],
+    "thumbnail": "assets/img/project/maxfit/eventmanagement.png",
+      "description": [
+    "MaxFit is a Salesforce-based Event Management Platform built on Experience Cloud, providing end-to-end solutions for managing events, attendees, speakers, and organizers.",
+    "Developed custom LWC components to deliver responsive pages, interactive dashboards, and dynamic filters, while integrating APIs for accurate location verification.",
+    "Implemented Apex triggers, asynchronous Apex jobs, and an error log framework to improve debugging, system monitoring, and performance.",
+    "Configured a secure Salesforce environment with profiles, role-based access, and permissions, while building interactive reports and dashboards for real-time insights."
+  ],
+  "highlights": [
+    "Salesforce Experience Cloud-based event management",
+    "Custom LWC components for UI/UX and dynamic pages",
+    "API integration for event location verification",
+    "Apex triggers, async Apex, and error logging",
+    "Reports and dashboards with filters for analytics",
+    "Role-based access control with profiles and permissions"
+  ],
     "video": "",
     "images": [
-      "assets/img/project/event1.jpg",
-      "assets/img/project/event2.jpg"
+      "assets/img/project/maxfit/maxfit1.png",
+      "assets/img/project/maxfit/maxfit2.png",
+       "assets/img/project/maxfit/maxfit3.png",
+        "assets/img/project/maxfit/maxfit4.png"
     ]
   },
   {
     "id": "io8",
     "title": "io8.io Angular Project",
-    "subtitle": "Business Web Platform",
+      "subtitle": "Business Website Builder Platform",
     "name": "io8.io",
     "type": "Real IT Solutions",
     "thumbnail": "assets/img/project/io8.png",
-    "description": [
-      "Developed enterprise-level Angular web application.",
-      "Worked on dashboards, charts, and role-based authentication."
-    ],
+   "description": [
+    "io8.io is a business website builder platform that allows users to create ready-to-use websites with just a few clicks and drag-and-drop functionality.",
+    "Contributed to the frontend development using Angular along with ClarityUI and Bootstrap framework, ensuring a responsive and modern user interface.",
+    "Developed dynamic tables with CRUD operations, enabling real-time data management and smooth user interactions.",
+    "Collaborated on dashboards, charts, and role-based authentication to enhance usability, accessibility, and business workflows."
+  ],
+  "highlights": [
+    "Drag-and-drop website builder functionality",
+    "Frontend development with Angular, ClarityUI, and Bootstrap",
+    "Dynamic tables with CRUD operations",
+    "Interactive dashboards and charts",
+    "Role-based authentication and secure access control"
+  ],
     "video": "",
     "images": [
-      "assets/img/project/io8-1.jpg",
-      "assets/img/project/io8-2.jpg"
+      "assets/img/project/noimage.jpeg",
+      "assets/img/project/noimage.jpeg"
+    ]
+  },
+  {
+     "id": "IncidentManagement",
+  "title": "Incident Management System",
+  "subtitle": "For io8 Case Resolution",
+  "name": "Incident Management",
+  "type": "Real IT Solutions",
+  "thumbnail": "assets/img/project/noimage.jpeg",
+  "description": [
+    "Designed and implemented an Incident Management System inspired by ServiceNow, focusing on seamless case resolution and IT service workflows.",
+    "Developed a modern and intuitive UI for creating, updating, and tracking incidents with priority levels, SLAs, and escalation workflows.",
+    "Built dashboards and reports for IT teams to monitor open cases, performance metrics, and resolution timelines in real-time.",
+    "Enhanced system reliability with automated workflows, role-based access control, and integration with external APIs for efficient case management."
+  ],
+  "highlights": [
+    "ServiceNow-style user interface with responsive design",
+    "Incident creation, assignment, and SLA tracking",
+    "Custom dashboards and reporting features",
+    "Role-based authentication and security model",
+    "Integration with external APIs for real-time case updates",
+    "Automated workflows and escalation rules"
+  ],
+    "video": "https://www.youtube.com/embed/vGOL7ZvuGMc",
+    "images": [
+      "assets/img/project/noimage.jpeg",
+      "assets/img/project/noimage.jpeg",
+      "assets/img/project/noimage.jpeg"
+    ]
+  },
+  {
+  "id": "Autoportal",
+  "title": "AutoPart Portal",
+  "subtitle": "Car Parts Management & Sales Automation",
+  "name": "Auto Part Portal",
+  "type": "TE Solutions",
+  "thumbnail": "assets/img/project/noimage.jpeg",
+  "description": [
+    "Built an AutoPart Portal on Salesforce Sales Cloud to streamline lead management, opportunity tracking, and real-time stock integration for improved business efficiency.",
+    "Automated sales workflows including lead assignment, opportunity conversion, and customer follow-ups, reducing manual efforts and boosting productivity.",
+    "Developed custom dashboards and reports to provide real-time visibility into sales performance, stock availability, and revenue trends.",
+    "Leveraged Lightning Web Components (LWC), Apex triggers, and Salesforce security model with profile-level configurations to ensure scalability and secure access control."
+  ],
+  "highlights": [
+    "Salesforce Sales Cloud-based AutoPart management system",
+    "Automated lead management and opportunity tracking",
+    "Real-time integration of stock details with sales workflows",
+    "Custom dashboards and reports for performance monitoring",
+    "Developed with LWC, Apex triggers, and async processes",
+    "Profile-based security model with role-based access"
+  ],
+    "video": "https://www.youtube.com/embed/vGOL7ZvuGMc",
+    "images": [
+      "assets/img/project/noimage.jpeg",
+      "assets/img/project/noimage.jpeg",
+      "assets/img/project/noimage.jpeg"
     ]
   }
+
 ]
