@@ -572,5 +572,19 @@
     });
     
 
+    // Update Phone Link
+    const phone = "+917378578677";
+  const link = document.getElementById("callLink");
+
+  link.addEventListener("click", async function () {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(phone);
+      }
+    } catch (e) {
+      // optional fallback: ignore if clipboard not allowed
+    }
+    // let the default tel: navigation proceed to open dialer
+  });
 
 })(jQuery); // End of use strict
